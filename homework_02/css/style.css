@@ -288,3 +288,133 @@ body {
     color: #666;
     padding-bottom: 15px
 }
+
+/*** My css ***/
+
+/* 1 */
+@media print {
+    .tm-sidebar, #ideas, #about, .heading, .blocks, section:last-of-type {
+        display: none;
+    }
+
+    #home {
+        margin-bottom: 0;
+        height: 250px;
+    }
+
+    .tm-main-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .tm-team-description-container {
+        padding: 0 50px;
+        max-width: none;
+    }
+
+    .tm-team-description-container > h2 {
+        color: blue;
+    }
+
+    .tm-content-box.flex-2-col {
+        display: inline-block;
+    }
+
+    .tm-content-box.flex-2-col > div > img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen {
+    /* 2 */
+    #about {
+        border-top: 1px solid silver;
+        border-left: 1px solid silver;
+    }
+
+    #about > ul > li {
+        border: none !important;
+        border-bottom: 1px solid silver !important;
+        border-right: 1px solid silver !important;
+    }
+
+    /* 3 */
+    p::first-letter {
+        font-size: 30px;
+        color: #76cdd7;
+    }
+
+    /* 4 */
+    section, .tm-sidebar {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    /* 5 */
+    .gallery-container > li > a > img {
+        border: 2px solid silver;
+    }
+
+    /* 6 */
+    .carousel-inner > div:first-child > div > div > h2 {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    /* 7 */
+    h2 + p {
+        font-style: italic;
+    }
+
+    /* 8 */
+    .tm-content-box.flex-2-col > .pad > p {
+        text-indent: 30px;
+        line-height: 2em;
+    }
+
+    /* 9 */
+    .heading > ol > li > a {
+        color: black;
+    }
+
+    .heading > ol > li > a:visited {
+        color: silver;
+    }
+
+    .heading > ol > li > a:hover {
+        color: lightblue;
+    }
+
+    .text::after {
+        content: "New";
+        vertical-align: super;
+        font-size: 12px;
+        color: red;
+    }
+
+    /* 10 */
+    li.box-bg {
+        border-collapse: collapse;
+    }
+    .blocks .box-bg {
+        background-color: #e5e5e5;
+    }
+
+    .blocks .box p::first-letter {
+        color: #000;
+    }
+
+    .blocks .box {
+        padding: 13px;
+    }
+
+    /* 11 */
+    .tm-sidebar > nav > ul > li:not(:last-child) {
+        border-bottom: 1px solid silver;
+    }
+
+    /* 12 */
+    input[type="text"],  .submit-btn{
+        color: red;
+    }
+}

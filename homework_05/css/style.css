@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+ul li a:hover {
+    color: #39c2d7
+}
+
+nav {
+    width: 500px;
+    margin: 25px 0 0 50px;
+}
+
+#epam-logo {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.banner {
+    background: url("../img/banner.jpg") no-repeat center;
+    height: 420px;
+    background-size: cover;
+}
+
+#text-inside-banner {
+    color: #fff;
+    font-size: 40px;
+    padding: 5% 0 0 20%;
+    width: 350px;
+}
+
+#news {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.photos {
+    width: 28%;
+    height: auto;
+    margin-bottom: 30px;
+    background: rgb(204, 204, 204);
+    padding: 10px;
+    font-size: 15px;
+}
+
+.photos:hover {
+    background: #39c2d7;
+    cursor: pointer;
+}
+
+.photos p {
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: #39c2d7;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-menu {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.bottom-menu nav {
+    width: 500px;
+    height: 100%;
+    margin: 0;
+}
+
+.bottom-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 14px;
+}
+
+.bottom-menu ul li a {
+    color: #fff;
+    text-decoration: underline;
+    text-transform: none;
+    font-size: 14px;
+}
+
+.bottom-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.bottom-menu p {
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    header {
+        height: 130px;
+    }
+
+    nav {
+        margin: 0 auto;
+        padding-top: 2%;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        height: 130px;
+        width: 500px;
+    }
+
+    #epam-logo {
+        margin: 0 auto;
+    }
+
+    #text-inside-banner {
+        font-size: 25px;
+        width: 435px;
+        margin: 0px auto;
+        text-align: center;
+        padding: 5%;
+    }
+
+    #news {
+        width: 96%;
+    }
+
+    .photos {
+        width: 45%;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        height: 80px;
+    }
+
+    .bottom-menu {
+        flex-direction: column;
+        width: 350px;
+        padding-bottom: 1%;
+    }
+
+    .bottom-menu nav {
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .bottom-menu p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        height: 250px;
+    }
+
+    header .top-menu {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        height: 170px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    header nav ul li {
+        padding: 2% 0 0 7%;
+        border-top: 1px solid rgb(211, 211, 211);
+        background: rgb(238, 238, 238);
+        height: 100%;
+    }
+
+    .banner {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #text-inside-banner {
+        background: #39c2d7;
+        text-align: left;
+        padding: 2%;
+        font-size: 23px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    #news {
+        width: 93%;
+    }
+
+    .photos {
+        width: 400px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .bottom-menu nav {
+        width: 200px;
+        padding-top: 10%;
+    }
+
+    .bottom-menu nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .bottom-menu p {
+        margin-bottom: 15px;
+    }
+
+    .bottom-menu li {
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,27 @@
+.folder {
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.folder:hover, .file:hover {
+    background: #eaeaea;
+}
+
+.folder i, .file i {
+    vertical-align: bottom;
+}
+
+.folder i {
+    color: #FF9800;
+}
+
+.file i {
+    color: #c0c0c0;
+}
+
+.empty {
+    font-style: italic;
+    margin-left: 5px;
+}

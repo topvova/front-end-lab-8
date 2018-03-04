@@ -1,1 +1,71 @@
-/* Your styles goes here */
+body {
+    background: #1C1C1F;
+    font-family: serif;
+}
+
+.tank-item {
+    float: left;
+    margin: 10px;
+    font-family: serif;
+    text-transform: uppercase;
+    color: #D7D2B7;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tank-item:hover {
+    background: #2C2C2C;
+    cursor: pointer;
+}
+
+.tank-item img {
+    width: 130px;
+    height: 100px;
+}
+
+.tank-item figcaption img {
+    width: 26px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.tank-item figcaption .level {
+    color: #A19E86;
+}
+
+.tank-item figcaption {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-bar {
+    color: #A19E86;
+}
+
+.tank-details {
+    overflow: hidden;
+    color: #A19E86;
+}
+
+.tank-details div:first-child {
+    float: left;
+    margin-left: 10px;
+    max-width: 50%;
+}
+
+.tank-details table {
+    width: 50%;
+    border: 1px solid #A19E86;
+}
+
+.tank-details table td {
+    border: 1px solid #A19E86;
+}
+
+.tank-details .back {
+    clear: both;
+    cursor: pointer;
+}
